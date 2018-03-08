@@ -207,9 +207,9 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1535525643888272}
-  m_LocalRotation: {x: -0.0000019311194, y: -0.0013772965, z: -0.00000015059953, w: 0.9999991}
-  m_LocalPosition: {x: 9.916947, y: 6.295002, z: 0.023588303}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -22.18, y: 5.07, z: -0.000000024131}
+  m_LocalScale: {x: 0.79757357, y: 0.79757357, z: 0.79757357}
   m_Children:
   - {fileID: 4466748442063188}
   - {fileID: 4954727968389472}
@@ -279,7 +279,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: fef8996891855f747af9e518b6be6a56, type: 2}
+  - {fileID: 2100000, guid: b07aec9d4890f6a4d8067daebab2be58, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -313,7 +313,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: fef8996891855f747af9e518b6be6a56, type: 2}
+  - {fileID: 2100000, guid: b07aec9d4890f6a4d8067daebab2be58, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -347,7 +347,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: fef8996891855f747af9e518b6be6a56, type: 2}
+  - {fileID: 2100000, guid: b07aec9d4890f6a4d8067daebab2be58, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -484,13 +484,13 @@ Rigidbody:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1535525643888272}
   serializedVersion: 2
-  m_Mass: 0.075
+  m_Mass: 1
   m_Drag: 0.25
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 8
+  m_Constraints: 56
   m_CollisionDetection: 0
 --- !u!65 &65148596431886140
 BoxCollider:
@@ -607,7 +607,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e77e692c06aeba4795952d62081f305, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationSpeed: 2
+  thrustSpeed: 25
+  rotationSpeed: 175
 --- !u!136 &136871610839903766
 CapsuleCollider:
   m_ObjectHideFlags: 1

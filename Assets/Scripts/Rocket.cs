@@ -7,8 +7,8 @@ public class Rocket : MonoBehaviour
 {
     Rigidbody rb;
     AudioSource thrust;
-    [SerializeField] float thrustSpeed;
-    [SerializeField] float rotationSpeed;
+    [SerializeField] float thrustSpeed = 100f;
+    [SerializeField] float rotationSpeed = 100f;
 
 	void Start ()
     {
@@ -21,6 +21,24 @@ public class Rocket : MonoBehaviour
         Control();
         ThrustAudio();
     }
+
+    void OnCollisionEnter(Collision collision)
+    {
+        switch (collision.gameObject.tag)
+        {
+            case "Friendly":
+            print("Okay");
+            break;
+
+            case "Fuel":
+            print("Fueling");
+            break;
+            
+            default:
+            print("Dead");
+            break;
+        }    
+    }  
 
     private void Control()
     {
